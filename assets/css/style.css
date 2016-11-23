@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    text-align: center;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.left {
+    height: 1000px;
+    background-image: url("../images/sideline.jpg");
+}
+
+.right {
+    height: 1000px;
+    background-image: url("../images/sideline.jpg");
+    width: 16.66666667%;
+}
+
+.col-md-8 {
+    background-color: white;
+    height: 500px;
+}
+
+input {
+    margin: 4px 0px 0px 4px;
+}
