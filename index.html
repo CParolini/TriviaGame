@@ -6,6 +6,100 @@
 </head>
 
 <body>
+    <div class="quizHeader">1st & 10 Trivia!</div>
+
+    <div id="display">Time Remaining: 01:00</div>
+    <div>
+        <p class="question">1. Which team is not in the NFC East?</p>
+
+        <ul>
+            <input class="answer" type="radio" name="q1" value="1">
+            <label id="correctString1">New England Patriots</label>
+            <br>
+            <input class="answer" type="radio" name="q1" value="0">
+            <label>Dallas Cowbooys</label>
+            <br>
+            <input class="answer" type="radio" name="q1" value="0">
+            <label>Washington Redskins</label>
+            <br>
+            <input class="answer" type="radio" name="q1" value="0">
+            <label>Philadeplhia Eagles</label>
+        </ul>
+    </div>
+    <div>
+        <p class="question">2. Who is the all time leading rusher in the NFL?</p>
+
+        <ul>
+            <input class="answer" type="radio" name="q2" value="0">
+            <label>Walter Payton</label>
+            <br>
+            <input class="answer" type="radio" name="q2" value="1">
+            <label id="correctString2">Emmit Smith</label>
+            <br>
+            <input class="answer" type="radio" name="q2" value="0">
+            <label>Barry Sanders</label>
+            <br>
+            <input class="answer" type="radio" name="q2" value="0">
+            <label>Curtis Martin</label>
+        </ul>
+    </div>
+    <div>
+        <p class="question">3. Who is currently the NFL Commissioner?</p>
+
+        <ul>
+            <input class="answer" type="radio" name="q3" value="0">
+            <label>Jason Garrett</label>
+            <br>
+            <input class="answer" type="radio" name="q3" value="1">
+            <label id="correctString3">Roger Goddell</label>
+            <br>
+            <input class="answer" type="radio" name="q3" value="0">
+            <label>Robert Kraft</label>
+            <br>
+            <input class="answer" type="radio" name="q3" value="0">
+            <label>Tom Brady</label>
+        </ul>
+    </div>
+    <div>
+        <p class="question">4. Who is the winningest coach in NFL history?</p>
+
+        <ul>
+            <input class="answer" type="radio" name="q4" value="0">
+            <label>Curly Lambeau</label>
+            <br>
+            <input class="answer" type="radio" name="q4" value="1">
+            <label id="correctString4">Don Shula</label>
+            <br>
+            <input class="answer" type="radio" name="q4" value="0">
+            <label>Tom Landry</label>
+            <br>
+            <input class="answer" type="radio" name="q4" value="0">
+            <label>Georg Halas</label>
+        </ul>
+    </div>
+    <br/>
+    <div class="submitter">
+        <input class="quizSubmit" id="submitButton" onClick="submitQuiz()" type="submit" value="Submit" />
+    </div>
+
+    <!--show only wrong answers on submit-->
+    <div class="quizAnswers" id="correctAnswer1"></div>
+    <div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+    <div class="quizAnswers" id="correctAnswer4"></div>
+
+    <!--show score upon submit-->
+    <div>
+        <h2 class="quizScore" id="userScore"></h2>
+    </div>
+    </div>
+
+</body>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+
+<!-- <body>
     <div class="container">
 
         <div class="row">
@@ -59,4 +153,4 @@
             </div>
         </div>
     </div>
-</body>
+</body> -->
