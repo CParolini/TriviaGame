@@ -1,6 +1,16 @@
-
+// var questions = [question1, question2, question3, question4];
 
 // This code will run as soon as the page loads
+
+function question(q, a1, a2, a3, a4, c1, ex1){
+  this.question = q;
+  this.answer1 = a1;
+  this.answer2 = a2;
+  this.answer3 = a3;
+  this.answer4 = a4;
+  this.correctAnswer = c1;
+  this.explanation = ex1;
+}
 
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
@@ -14,15 +24,15 @@ function startTimer(duration, display) {
         display.textContent = minutes + ":" + seconds;
 
         if (--timer < 0) {
-            // timer = duration;
-            alert("Game Over!");
+            timer = duration;
+            // alert("Game Over!");
             location.reload();
         }
     }, 1000);
 }
 
 window.onload = function () {
-    var fiveMinutes = 60 * 1,
+    var fiveMinutes = 60 * .25,
         display = document.querySelector('#display');
     startTimer(fiveMinutes, display);
 };
